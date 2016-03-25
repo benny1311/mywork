@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>IFE JavaScript Task 01</title>
+  </head>
+<body>
+	
+  <fieldset id="form-gra-time">
+    <legend>请选择日期粒度：</legend>
+    <label>日<input name="gra-time" value="day" type="radio" checked="checked"></label>
+    <label>周<input name="gra-time" value="week" type="radio"></label>
+    <label>月<input name="gra-time" value="month" type="radio"></label>
+  </fieldset>
+
+  <fieldset>
+    <legend>请选择查看的城市：</legend>
+    <select id="city-select">
+      <option>北京</option>
+    </select>
+  </fieldset>
+
+  <div class="aqi-chart-wrap">
+  	
+  </div>
+  
+  <ul id="parent-list">
+		<li id="post-1">Item 1</li>
+		<li id="post-2">Item 2</li>
+		<li id="post-3">Item 3</li>
+		<li id="post-4">Item 4</li>
+		<li id="post-5">Item 5</li>
+		<li id="post-6">Item 6</li>
+	</ul>
+  
+  <script src="js/js.js"></script>
+</body>
+</html>
+
+
+<!--<script type="text/javascript">
+	  
+var $ = function(ele){
+	return {
+		on: function(Event,NodeName,Handle){
+				document.querySelector(ele).addEventListener(Event,function(e){
+					if(e.target && e.target.nodeName == NodeName.toUpperCase()){
+						return Handle(e.target);
+					}
+				},false);
+		}
+	}
+};	
+
+$('body').on('click','input',function(event){
+	switch(event.value){
+		case "day": 
+			alert("ddd");
+			break;
+			
+		case "week": 
+			alert("ddd");
+			break;
+		
+		case "month": 
+			alert("ddd");
+			break;
+		
+		default:
+			alert("这个input没绑定事件哦");
+			break;
+	};
+});
+ 
+</script>-->
